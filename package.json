@@ -1,0 +1,42 @@
+{
+  "name": "rest-api",
+  "version": "1.0.0",
+  "description": "REST API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marenga14/NODE_RESTFUL.git"
+  },
+  "keywords": [
+    "marenga14"
+  ],
+  "author": "marenga Julius",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marenga14/NODE_RESTFUL/issues"
+  },
+  "homepage": "https://github.com/marenga14/NODE_RESTFUL#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "connect-mongodb-session": "^3.1.1",
+    "csurf": "^1.11.0",
+    "ejs": "^3.1.6",
+    "express": "^4.18.1",
+    "express-handlebars": "^6.0.2",
+    "express-redirect": "^1.2.2",
+    "express-session": "^1.17.2",
+    "express-validator": "^6.14.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "^4.2.2",
+    "mongoose": "^6.2.10",
+    "multer": "^1.4.4",
+    "nodemailer": "^6.7.2",
+    "nodemailer-sendgrid-transport": "^0.2.0",
+    "pug": "^3.0.2",
+    "stripe": "^8.217.0"
+  }
+}
