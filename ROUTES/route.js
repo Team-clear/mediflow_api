@@ -12,7 +12,7 @@ route.get("/searchMedicine/", feedsController.searchMedicine);
 // route.delete("/deletePost/:postId", isAuth, feedsController.deleteHouse);
 // route.put("/updateHouse/:postId", isAuth, feedsController.updateHouse);
 // route.get("/district/", feedsController.getDistricts);
-// route.get("/street/", feedsController.getWards);
+route.get("/medDetails/", feedsController.getsingleMedicine);
 // route.get("/users", userController.returnAllusers);
 // route.get("/userProps", isAuth, feedsController.userProperties);
 module.exports = route;

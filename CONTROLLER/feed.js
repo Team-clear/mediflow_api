@@ -23,16 +23,16 @@ exports.showMedicines = async (req, res, next) => {
 };
 
 exports.getsingleMedicine = async (req, res, next) => {
-  let houseId = req.query.postId;
+  let medicineId = req.query.medicineId;
   try {
-    let foundHouse = await medicine.findById(houseId);
-    if (!foundHouse) {
+    let foundMedicine = await medicine.findById(medicineId.toString());
+    if (!foundMedicine) {
       res.status(404).json({ message: "no property found" });
     }
 
     res.status(200).json({
       message: "fetched sucessifully",
-      post: foundHouse,
+      post: foundMedicine,
     });
   } catch (error) {
     console.log(error);
@@ -73,10 +73,7 @@ exports.searchMedicine = async (req, res, next) => {
 
   try {
     let med = await medicine.find({
-      $or: [
-        { Title: { $regex: query.Title, $options: "i" } },
-        { City: { $regex: query.City, $options: "i" } },
-      ],
+      $or: [{ Title: { $regex: query.Title, $options: "i" } }],
     });
 
     res.status(200).json({
