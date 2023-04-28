@@ -1,6 +1,9 @@
 # mediflow_api
+##### the api are hosted on the lightSail AWS servers 
 
-### geting all the medicine endpoint
+
+### geting all the medicine endpointe
+
 ```
 http://13.40.153.119/allMedcine
 ```
